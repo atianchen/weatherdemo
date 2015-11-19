@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh_cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>峨眉山气象实时预报</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/jquery.mobile.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/public.css">
+    <script data-main="../static/js/main.js" src="../static/js/require.js"></script>
+    <script type="text/javascript" src="../static/js/site/weather.js"></script>
+</head>
+<body>
+    <div id="main" data-role="page" style="overflow-x:scroll">
+        <img src="../static/img/ems.jpg" width="673" height="748"/>
+        <div id="notice">
+           <div class="pt ipt"></div>
+            <div class="board">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+                <div class="bi" >
+                    <ul>
+                        <li class="title"><h1>实时生态环境</h1></li>
+                        <li><label class="w2">温度</label><span >:</span></span><div class="temp"></div><span class="unit">℃</span></li>
+                        <li><label class="w2">湿度</label><span>:</span><div class="hr"></div><span class="unit">%</span></li>
+                        <li><label class="w3">光照度</label><span>:</span><div class="lux"></div><span class="unit">LUX</span></li>
+                        <li><label class="w4">紫外指数</label><span>:</span><div class="uv"></div><span class="unit">w/m2</span></li>
+                        <li><label>PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.5</label><span>:</span><div class="pm"></div><span class="unit">ug/m3</span></li>
+                        <li><label class="w4">负氧离子</label><span>:</span><div class="niap"></div><span class="unit">个/cm3</span></li>
+                        <li><label class="w2">风速</label><span>:</span><div class="ws"></div><span class="unit">m/s</span></li>
+                        <li><label class="w2">风向</label><span>:</span><div class="wd"></div><span class="unit"></span></li>
+                        <li><label class="w3">降雨量</label><span>:</span><div class="rf"></div><span class="unit">mm/min</span></li>
+                        <li><label class="w2">土湿</label><span>:</span><div class="sm"></div><span class="unit">%</span></li>
+                        <li><label class="w2">土温</label><span>:</span><div class="st"></div><span class="unit">℃</span></li>
+                        <li class="divider"></li>
+                        <li class="title"><h2>数据更新时间</h2></li>
+                        <li><span class="updatetime"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+*{padding:0px;margin:0px;font-family:Tahoma,Arial,Roboto,”Droid Sans”,”Helvetica Neue”,”Droid Sans Fallback”,”Heiti SC”,sans-self;}
+ul li{list-style:none}
+#main{width:auto;height:auto;position:absolute;}
+.sce{cursor:pointer;position:absolute;width:35px;height:35px;background:url(../img/marker.png) no-repeat center center;}
+.nowrap{white-space:nowrap;}
+#notice{display:none;position:absolute;top:10px;left:100px;width:auto;min-height:160px;height:auto;opacity:0.9;z-index:999;text-shadow:none}
+div.pt{position:absolute;top:0;left:0; width:0; height:0; border-top:30px solid transparent; border-right:30px solid #fea203; border-bottom:30px solid transparent;}
+div.ipt{ width:0; height:0; border-top:30px solid transparent; border-right:30px solid #3e3e3e; border-bottom:30px solid transparent;}
+div.board{left:29px;top:0px;position:absolute;height:auto;min-height:160px;background: #3e3e3e;width:160px;border-radius:12px;padding:10px;}
+div.bi{width:100%;height:auto;background:#2b2d2c;display:none;padding:5px 0px;}
+div.biul{width:95%;margin:0 auto;text-shadow:0}
+div.bi ul li{display:block;width:100%;line-height:20px;height:20px;padding:0px 5px;}
+div.bi ul li.title{height:25px;line-height:25px;text-align:center;font-weight:bold}
+div.bi ul li.title h1{color:#f7a700;font-size:16px;}
+div.bi ul li.title h2{color:#f7a700;font-size:14px;font-weight:normal }
+div.bi ul li span{font-size:12px;color:#fff;text-align:left;display:inline-block;white-space:nowrap;  letter-spacing:1em;}
+div.bi ul li span.unit{width:10px;  letter-spacing:0em;margin-left:5px;}
+div.bi ul li span.updatetime{width:100%;text-align:center; letter-spacing:0em;}
+div.bi ul li div{font-size:12px;color:#fff;text-align:left;display:inline-block;width:auto;margin:0 auto;white-space:nowrap;}
+div.bi ul li label{margin-left:5px;font-size:12px;color:#fff;text-align:left;display:inline-block;width:55px;white-space:nowrap;}
+div.bi ul li.divider{background:#fff;height:2px;overflow:hidden;}
+
+body.ui-mobile-viewport, div.ui-mobile-viewport{overflow-x:scroll}
+.spinner {width: 60px;height: 60px; position: relative; margin:0 auto;margin-top:50px;  }
+.double-bounce1, .double-bounce2 { width: 100%; height: 100%; border-radius: 50%;background-color: #67CF22; opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: bounce 2.0s infinite ease-in-out;
+    animation: bounce 2.0s infinite ease-in-out;
+}
+.double-bounce2 { -webkit-animation-delay: -1.0s; animation-delay: -1.0s;  }
+@-webkit-keyframes bounce { 0%, 100% { -webkit-transform: scale(0.0) } 50% { -webkit-transform: scale(1.0) } }
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    } 50% {
+          transform: scale(1.0);
+          -webkit-transform: scale(1.0);
+      }
+}
+.w2{
+    letter-spacing:2.5em; /*如果需要y个字两端对齐，则为(x-y)/(y-1),这里是（4-2）/(2-1)=2em */
+    margin-right:-2.5em; /*同上*/
+}
+.w3{
+    letter-spacing:0.8em; /*如果需要y个字两端对齐，则为(x-y)/(y-1),这里是（4-3）/(3-1)=0.5em */
+    margin-right:0.8em; /*同上*/
+}
+.w4{
+    letter-spacing:0.2em; /*如果需要y个字两端对齐，则为(x-y)/(y-1),这里是（4-3）/(3-1)=0.5em */
+    margin-right:0.2em; /*同上*/
+}
